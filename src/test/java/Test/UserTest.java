@@ -57,7 +57,7 @@ public class UserTest {
             JsonPath js1 = new JsonPath(ls);
           String toBeAsserted = js1.getString("reason_code");
           Assert.assertTrue(toBeAsserted.equalsIgnoreCase("00"));
-        System.out.println(toBeAsserted);
+        System.out.println("love"+toBeAsserted);
 
 
 
