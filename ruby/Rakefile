@@ -1,0 +1,15 @@
+require 'rake'
+require 'rspec/core/rake_task'
+
+SPEC_PATH = 'spec/*/*.rb'
+TEST_HARNESS_PATH = 'setup/*/*.rb'
+
+desc "Run all"
+RSpec::Core::RakeTask.new('all') do |t|
+  t.rspec_opts = ["-Ilib","--color --tty", "--tag ~known_failure"]
+  t.pattern = [ 
+    TEST_HARNESS_PATH,
+    SPEC_PATH 
+  ]
+
+end

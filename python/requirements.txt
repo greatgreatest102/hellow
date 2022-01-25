@@ -1,0 +1,6 @@
+pytest
+requests
+Random-Word-Generator
+python-dotenv
+pytest-html
+pytest-xdist
